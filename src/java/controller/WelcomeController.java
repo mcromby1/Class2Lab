@@ -42,7 +42,7 @@ public class WelcomeController extends HttpServlet {
         String msg = msgServ.getGreeting(name);
         request.setAttribute("welcomeMsg", msg);
 
-        RequestDispatcher view = request.getRequestDispatcher("/Welcome.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("/welcome.jsp");
         view.forward(request, response);
     }
 
